@@ -8,7 +8,13 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "stylelint": "stylelint \"src/**/*.{css,scss}\"",
+    "stylelint:fix": "stylelint \"src/**/*.{css,scss}\" --fix",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\" --ignore-path ./.prettierignore",
+    "check": "npm run stylelint:fix && npm run lint:fix && npm run format",
+    "commit": "npm run check && cz"
   },
   "dependencies": {
     "axios": "^1.8.3",
@@ -34,6 +40,7 @@
     "lint-staged": "^15.5.0",
     "prettier": "^3.5.3",
     "stylelint": "^16.16.0",
+    "stylelint-config-standard-scss": "^14.0.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"
