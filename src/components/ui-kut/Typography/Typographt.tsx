@@ -1,6 +1,8 @@
-import React from 'react'
-import styles from './Button.module.scss'
+// РАСКОММЕНТИРОВАТЬ ПРИ РЕАЛИЗАЦИИ, РУГАЕТСЯ СТАЙЛЛИНТ
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline'
-}
+// import React from 'react'
+// import styles from './Button.module.scss'
+
+// interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+//   variant?: 'primary' | 'secondary' | 'outline'
+// }
