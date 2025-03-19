@@ -1,1 +1,45 @@
-// Это временный файл, который будет использован позже.
+@use '../../../styles/variables' as *;
+
+// TODO: Уточнить внешний вид кнопки при ховере и блокировке
+
+// TODO: Изменить курсор в соответствии с макетом
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  padding: 20px;
+  gap: 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: $font-size-button;
+  line-height: 100%;
+  width: 100%;
+  cursor: pointer;
+
+  &.primary {
+    background-color: $button-color-white;
+    color: $text-color;
+    height: 70px;
+  }
+
+  &.secondary {
+    background-color: $button-color-green;
+    color: $text-color-white;
+  }
+}
+
+.small {
+  max-width: 348px;
+
+  @media (width <= 360px) {
+    width: 100%;
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
