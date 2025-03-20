@@ -1,13 +1,148 @@
-// Цвета
-$primary-color: #0d6efd;
-$secondary-color: #6c757d;
-$background-color: #f8f9fa;
+// ----Colors----
+// BASE
 $text-color: #2d2d2d;
-$text-color-white: #fff;
-$button-color-white: #fff;
-$button-color-green: #055042;
+$text-white-color: #d9d9d9;
+$text-grey-color: #4d4d4d;
+$ui-grey-light-color: #878787cc;
+$ui-grey-light-secondary-color: #c3c3c3cc;
+$ui-primary-color: #055042;
+$ui-white-color: #fff;
+$ui-black-color: #000;
 
-// Типографика
-$font-family: 'Inter', sans-serif;
-$font-size-base: 16px;
-$font-size-button: 20px;
+// GEOMETRY ELEMENTS
+$cover-shape-square-color: #d8d8d8;
+$cover-shape-circle-color: #dfdfdf;
+$cover-icon-secondary-color: #525252;
+$shape-figure-color: #bababa;
+$ui-line: #b0b0b0;
+$card-icon-color: #7c7c7c;
+$card-border-color: #656565;
+$business-team-pattern: #6f6f6f;
+$button-color-primary: #fff;
+$button-color-secondary: #055042;
+
+// MODAL
+$m-backdrop-color: #000c;
+$m-input-background-color: #f1f4f7;
+$m-input-line-color: #d9d9d9;
+$m-close-color: #777;
+$m-checkbox-border-color: #c1c1c1;
+
+// Cover
+$c-nav-divider-color: #d9d9d9;
+$c-neutral-primary-color: #444;
+$c-text-muted: #c6c6c6;
+
+// Our Philosophy
+$op-text-primary-color: #202021;
+$op-text-primary-muted-color: #5e5e5d;
+
+// Widget & Collaboration - в base
+// Demo
+$d-text-secondary-color: #959595;
+
+// Who We Are
+$wwa-card-background-color: #ebebeb;
+
+// FAQ
+$faq-text-secondary-color: #191919;
+$faq-button-plus-color: #5e5e5ecc;
+$faq-button-border-color: #5e5e5ee5;
+$faq-section-divider-color: #a3a3a3;
+
+// Footer
+$f-background-dark-color: #171717;
+$f-contact-text-color: #c3c3c3cc;
+$f-link-start-text-color: #4d4d4d;
+
+// ----Gradients----
+// Cover
+$c-gradient-accent: #00161d;
+$c-gradient-start: #02819d00;
+$c-gradient-end: #055042;
+$c-gradient-figure-detail-accent: #044064;
+$c-gradient-title-start: #056654;
+$c-gradient-title-end: #000;
+
+// Widget & Demo
+$wd-gradient-line-start: #055042;
+$wd-gradient-line-end: #0bb696;
+
+// Demo
+$d-gradient-circle-start: #0bb696;
+$d-gradient-circle-mid1: #098971;
+$d-gradient-circle-mid2: #066856;
+$d-gradient-circle-end: #055042;
+
+// Footer
+$f-title-gradient-start: #04382e;
+$f-title-gradient-mid1: #066553;
+$f-title-gradient-mid2: #087e68;
+$f-title-gradient-end: #0bb696;
+
+// ---- Typography ----
+// BASE
+// Font-family
+$font-family-base: 'Inter', sans-serif;
+$font-family-gotham: 'Gotham', 'Montserrat', sans-serif;
+$font-family-helvetica: helvetica, arial, sans-serif;
+$font-family-manrope: 'Manrope', sans-serif;
+
+// Font-size
+$font-size-root: 16px;
+$font-size-default: 1.125rem;
+$font-size-button: 1.25rem;
+$font-size-global-small: 1.375rem;
+$font-size-global-medium: 2.125rem;
+$font-size-global-large: 2.375rem;
+$font-size-global-x-large: 2.5rem;
+$title-font-size: 4rem;
+$site-title-font-size: 17.5rem;
+
+// Font-weight
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+
+// Line-height
+$line-height-normal: 100%;
+$line-height-base: 120%;
+$line-height-loose: 140%;
+
+// Modal
+$font-size-modal-small: 0.625rem;
+$font-size-modal-large: 2.25rem;
+$line-height-modal: 110%;
+
+// ADAPTIVE
+// Font size
+// Cover
+$adp-font-size-site-title: clamp(4.4375rem, 0.0833rem + 19.3519vw, 17.5rem);
+$adp-header-menu-font-size: calc(
+  2.25rem - clamp(1rem, 0.9167rem + 0.3704vw, 1.25rem)
+);
+$adp-cover-font-size: clamp(1.25rem, 1.2083rem + 0.1852vw, 1.375rem);
+
+// Badges
+$adp-site-badges-font-size: clamp(0.75rem, 0.5833rem + 0.7407vw, 1.25rem);
+$adp-site-large-badges-font-size: clamp(1rem, 0.9167rem + 0.3704vw, 1.25rem);
+
+// Title & Description
+$adp-title-font-size: clamp(1.5rem, 0.6667rem + 3.7037vw, 4rem);
+$adp-global-small-font-size: clamp(1rem, 0.9583rem + 0.1852vw, 1.125rem);
+$adp-global-medium-font-size: clamp(1.25rem, 0.9583rem + 1.2963vw, 2.125rem);
+
+// Card & Demo & FAQ
+$adp-card-font-size: clamp(1.125rem, 1.0833rem + 0.1852vw, 1.25rem);
+$adp-demo-font-size: clamp(1.125rem, 1.0833rem + 0.1852vw, 1.25rem);
+$adp-faq-menu-font-size: clamp(1.125rem, 1.0833rem + 0.1852vw, 1.25rem);
+
+// Who We Are
+$adp-wwa-card-name-font-size: clamp(1.125rem, 0.7083rem + 1.8519vw, 2.375rem);
+
+// Footer
+$adp-footer-menu-font-size: clamp(1rem, 0.9167rem + 0.3704vw, 1.25rem);
+
+// Modal
+$modal-title-font-size: clamp(1.375rem, 1.0833rem + 1.2963vw, 2.25rem);
+$modal-description-font-size: clamp(1.125rem, 1.0833rem + 0.1852vw, 1.25rem);
