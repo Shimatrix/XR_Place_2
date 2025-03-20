@@ -2,8 +2,8 @@
 @use './variables' as *;
 
 body {
-  font-family: $font-family;
-  font-size: $font-size-base;
-  background-color: $background-color;
+  font-family: $font-family-base;
+  font-size: $font-size-root;
+  background-color: $ui-white-color;
   color: $text-color;
 }

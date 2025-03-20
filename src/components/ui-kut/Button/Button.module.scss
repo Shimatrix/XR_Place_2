@@ -13,21 +13,21 @@
   gap: 12px;
   border-radius: 20px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: $font-weight-regular;
   font-size: $font-size-button;
-  line-height: 100%;
+  line-height: $line-height-normal;
   width: 100%;
   cursor: pointer;
 
   &.primary {
-    background-color: $button-color-white;
+    background-color: $button-color-primary;
     color: $text-color;
     height: 70px;
   }
 
   &.secondary {
-    background-color: $button-color-green;
-    color: $text-color-white;
+    background-color: $button-color-secondary;
+    color: $ui-white-color;
   }
 }
 
