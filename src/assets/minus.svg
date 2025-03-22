@@ -1,0 +1,8 @@
+<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Круг -->
+  <circle cx="25" cy="25" r="20" fill="none" stroke="#5E5E5EE5" stroke-width="1" />
+  <!-- Вертикальная линия плюса -->
+  <!-- <rect x="24.5" y="12.5" width="1" height="25" fill="#5E5E5ECC" /> -->
+  <!-- Горизонтальная линия плюса -->
+  <rect x="12.5" y="24.5" width="25" height="1" fill="#5E5E5ECC" />
+</svg>

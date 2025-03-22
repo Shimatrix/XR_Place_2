@@ -1,0 +1,61 @@
+@use '../../../styles/variables' as *;
+
+.container {
+  border-top: 0.5px solid $faq-section-divider-color;
+  padding: 20px 0;
+  &:last-of-type {
+    border-bottom: 0.5px solid $faq-section-divider-color;
+  }
+}
+
+.dropdownItem {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid $faq-button-border-color;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    transition: 0.3s ease-out;
+    width: 25px;
+    height: 1px;
+    background-color: $faq-button-border-color;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+  }
+
+  &:before {
+    transform: translatey(-50%) rotate(90deg);
+  }
+
+  &:after {
+    transform: translatey(-50%);
+  }
+
+  &.open {
+    &:before {
+      transform: translatey(-50%) rotate(0deg);
+    }
+
+    &:after {
+      transform: translatey(-50%) rotate(-90deg);
+      opacity: 0;
+    }
+  }
+}
+
+.description {
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
