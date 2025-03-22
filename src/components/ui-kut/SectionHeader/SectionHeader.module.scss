@@ -1,0 +1,15 @@
+@use '../../../styles/variables' as *;
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-block-end: 40px;
+}
+
+.theme {
+  border: 1px solid $ui-primary-color;
+  border-radius: 30px;
+  padding: 10px 16px;
+  justify-self: self-start;
+  align-self: baseline;
+}

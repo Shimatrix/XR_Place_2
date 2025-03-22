@@ -1,6 +1,12 @@
 // @import './variables';
 @use './variables' as *;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: $font-family-base;
   font-size: $font-size-root;
